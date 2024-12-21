@@ -29,9 +29,18 @@
 
 # challenge-2
 # Life in Weeks
-age=input("How Old are you?\n")
-weeks=(90-int(age))*52;
+# age=input("How Old are you?\n")
+# weeks=(90-int(age))*52;
 
-print(f"you have {weeks} Weeks Left! Enjoy it!")
+# print(f"you have {weeks} Weeks Left! Enjoy it!")
 
 
+# BMI-calculator
+Height= float(input("Enter your Height\n"))
+Weight= float(input("Enter your Weight\n"))
+
+maxValue= max(Height,Weight)
+minValue= min(Height,Weight)
+BMI= (maxValue//minValue**2)
+
+print(f"your BMI Is {BMI}")
