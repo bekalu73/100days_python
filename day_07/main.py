@@ -16,23 +16,15 @@ import random
 
 # step2
 word_list = ["ardvark", "baboon", "camel"]
+chosen_word = random.choice(word_list)
+guess = input("Please guess a letter: \n").lower()
+print(f"Chosen word: {chosen_word}")
 
-choosen_word = random.choice(word_list)
-guess= input("Please guess a letter : \n").lower()
+display_list = ["_" for _ in chosen_word]
 
-print(f"choosen word {choosen_word}")
-display_list = ["_" for _ in choosen_word]
+for index, letter in enumerate(chosen_word):
+    if letter == guess:
+        display_list[index] = letter
 
+print(f"Updated display: {' '.join(display_list)}")
 
-
-for index, word in enumerate(choosen_word):
-    if(word==guess):
-        display_list[index]=word
-    else:
-        display_list[index]="_"
-
-
-
-print(f"empty list {display_list}")
-
- 

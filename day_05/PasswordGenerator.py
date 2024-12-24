@@ -43,8 +43,5 @@
 # # print(f"password: {password}")
 
 # Correct sum calculation
-total_sum = 0
-for number in range(101):
-    total_sum += number
-
+total_sum = sum(range(101))
 print(total_sum)
