@@ -23,6 +23,8 @@ guess= input("Please guess a letter : \n").lower()
 print(f"choosen word {choosen_word}")
 display_list = ["_" for _ in choosen_word]
 
+
+
 for index, word in enumerate(choosen_word):
     if(word==guess):
         display_list[index]=word
